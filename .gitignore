@@ -1,0 +1,11 @@
+# personal data: never commit
+data/raw/
+images/
+
+# python / notebooks
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
