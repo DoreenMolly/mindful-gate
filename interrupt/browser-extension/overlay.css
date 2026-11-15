@@ -1,0 +1,31 @@
+#mindful-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: system-ui, sans-serif;
+}
+#mindful-gate img {
+  max-width: 80vw;
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+#mindful-gate p { font-size: 20px; margin: 0; }
+#mindful-gate .buttons { display: flex; gap: 12px; }
+#mindful-gate button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+#mindful-gate button.close { background: #4f8cff; color: #fff; }
+#mindful-gate button.continue { background: #333; color: #ccc; }
+#mindful-gate button:disabled { opacity: 0.4; cursor: not-allowed; }
