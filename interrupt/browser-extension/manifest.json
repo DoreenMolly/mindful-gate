@@ -2,7 +2,7 @@
     "manifest_version" : 3,
     "name" : "Mindful Gate",
     "version" : "0.1",
-    "description" : "Shows something meaningful before distracting sites load.",
+    "description" : "Shows something meaningful to you before distracting sites load. Are you willing to trade it for a dopamine fix?",
     "permissions" : ["storage"],
     "background": { "service_worker": "background.js" },
     "content_scripts": [

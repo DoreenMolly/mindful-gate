@@ -21,14 +21,14 @@ function showGate() {
   img.src = chrome.runtime.getURL(pick);
 
   const msg = document.createElement("p");
-  msg.textContent = "Are you willing to trade this for a dopamine fix?";
+  msg.textContent = "Are you getting closer or further from this dream?";
 
   const buttons = document.createElement("div");
   buttons.className = "buttons";
 
   const closeBtn = document.createElement("button");
   closeBtn.className = "close";
-  closeBtn.textContent = "Close";
+  closeBtn.textContent = "FURTHER!";
   closeBtn.onclick = () => {
     log("closed");
     chrome.runtime.sendMessage({ type: "close" });
@@ -39,14 +39,14 @@ function showGate() {
   contBtn.disabled = true;
 
   let remaining = COUNTDOWN_SECONDS;
-  contBtn.textContent = `Continue anyway (${remaining})`;
+  contBtn.textContent = `CLOSER, Please continue <3 (${remaining})`;
   const timer = setInterval(() => {
     remaining -= 1;
     if (remaining > 0) {
-      contBtn.textContent = `Continue anyway (${remaining})`;
+      contBtn.textContent = `ClOSER, Please continue <3 (${remaining})`;
     } else {
       clearInterval(timer);
-      contBtn.textContent = "Continue anyway";
+      contBtn.textContent = "CLOSER, Please continue <3";
       contBtn.disabled = false;
     }
   }, 1000);
