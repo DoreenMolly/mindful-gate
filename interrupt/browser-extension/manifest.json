@@ -1,11 +1,21 @@
 {
-    "manifest_version" : 3,
-    "name" : "Mindful Gate",
-    "version" : "0.1",
-    "description" : "Shows something meaningful to you before distracting sites load. Are you willing to trade it for a dopamine fix?",
-    "permissions" : ["storage"],
-    "background": { "service_worker": "background.js" },
-    "content_scripts": [
+  "manifest_version": 3,
+  "name": "Mindful Gate",
+  "version": "0.1",
+  "description": "Shows something meaningful to you before distracting sites load. Are you willing to trade it for a dopamine fix?",
+  "permissions": ["storage"],
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Mindful Gate",
+    "default_popup": "popup.html",
+    "default_icon": {
+     "128": "icons/icon128.png"
+    }
+  },
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
     {
       "matches": ["*://*.instagram.com/*"],
       "js": ["content.js"],
