@@ -7,9 +7,9 @@ When I open Instagram, I see a picture in my vision board first. It's a reminder
 ## Status
 [x] iPhone Shortcut: photo gate on app open
 
-[ ] Browser extension
+[x] Browser extension
 
-[ ] Event logging
+[x] Event logging
 
 [ ] Analysis Notebook
 
